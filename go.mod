@@ -1,4 +1,4 @@
-module pdu
+module pdu-encoder
 
 go 1.16
 

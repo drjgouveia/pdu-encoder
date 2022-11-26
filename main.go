@@ -15,7 +15,6 @@ func main() {
 	address := flag.String("address", "", "The SMS destination number")
 	message := flag.String("message", "", "The message body to be sent on the SMS")
 	flag.Parse()
-	fmt.Printf("SCA: \"%s\"\nAddress: \"%s\"\nMessage: \"%s\"\n", *sca, *address, *message)
 	var sms = pdu.Encode{
 		Sca:                 *sca,
 		Ucs2:                false,
